@@ -29,14 +29,13 @@ header {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: flex-end;
-    border: 1px dashed red;
 }
 .nerds-menu-item a {
     font-size: 16px;
     line-height: 30px;
     text-transform: uppercase;
     color: #000000;
-    font-weight: 550px
+    font-weight: 550px;
 }
 .navigation-list-item {
     margin-right: 45px;
@@ -51,7 +50,6 @@ header {
 }
 .nerds-menu-item .menu-page:active {
     color: #bdbdbd;
-    border-bottom: 2px solid #fb565a;
 }
 .nav-current {
     border-bottom: 2px solid #fb565a;
@@ -62,4 +60,111 @@ header {
 .main-logo img:active {
     opacity: 0.3;
 }
+
+.nav-preview {
+    margin: 0;
+    padding: 10px 0 0;
+}
+.nav-form {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.nav-form section {
+    position: relative;
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-form section .slide-text {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 520px;
+    padding: 70px 0 0;
+    text-align: left;
+}
+.nav-form section .slide-img {
+    width: 100%;
+    text-align: right;
+}
+section .slide-text h1 {
+    font-size: 55px;
+    font-weight: 550px;
+    line-height: 55px;
+    margin-bottom: 30px;
+    overflow-x: visible;
+}
+section .slide-text p {
+    width: 420px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+section .slide-text a {
+    display: block;
+    margin: 0;
+    padding: 15px 0;
+    width: 240px;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #fb565a;
+    border-radius: 2px;
+}
+
+
+.nav-preview .label-slides {
+    position: absolute;
+    left: 460px;
+    top: 295px;
+    display: flex;
+    width: 90px;
+    justify-content: space-between;
+}
+.nav-preview .label-slides label {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    z-index: 1;
+}
+.input-hidden {
+    position: absolute;
+    top: -1000px;
+    left: 0;
+}
+#input-slide-1:checked ~ .label-slides label:nth-of-type(1),
+#input-slide-2:checked ~ .label-slides label:nth-of-type(2),
+#input-slide-3:checked ~ .label-slides label:nth-of-type(3) {
+    background-image: radial-gradient(circle, transparent 2px, #c2c2c2 2px, #c2c2c2 5px, transparent 5px);
+}
+input:checked + section {
+    display: block;
+}
+
+
+
+
+.nav-form section .slide-1-img {
+    height: 413px;
+}
+.nav-form section .slide-2-img {
+    height: 430px;
+}
+.nav-form section .slide-3-img {
+    height: 411px;
+}
+/*
+.nav-form input:checked + section {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: 1px dashed green;
+}*/
+
 
