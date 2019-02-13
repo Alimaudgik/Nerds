@@ -15,6 +15,7 @@ ul {
 p {
     font-size: 16px;
     line-height: 24px;
+    color: #283136;
 }
 a {
     text-decoration: none;
@@ -102,11 +103,11 @@ section .slide-text p {
     width: 420px;
     margin-bottom: 20px;
 }
-section .slide-text a {
+section .slide-text a,
+.map-adress .addres-place a {
     display: block;
     margin: 0;
     padding: 15px 0;
-    width: 240px;
     font-size: 16px;
     line-height: 18px;
     text-align: center;
@@ -115,15 +116,23 @@ section .slide-text a {
     background-color: #fb565a;
     border-radius: 2px;
 }
-section .slide-text a:hover {
+section .slide-text a {
+    width: 240px;
+}
+section .slide-text a:hover,
+.map-adress .addres-place a:hover {
     background-color: #e74246;
 }
-section .slide-text a:active {
+section .slide-text a:active,
+.map-adress .addres-place a:active {
     background-color: #d7373b;
     color: #e37376;
     border-top: 3px solid #c13135;
-    box-sizing: padding-box;
     padding-top: 12px;
+}
+.section .slide-text a {
+    width: 240px;
+
 }
 
 .nav-preview .label-slides {
@@ -170,7 +179,8 @@ input:checked + section {
 
 .container {
     margin: 0;
-    padding: 80px 140px
+    padding: 80px 140px;
+    background-color: #ffffff;
 }
 
 .container .profile {
@@ -359,4 +369,127 @@ input:checked + section {
     text-transform: uppercase;
 } 
 
+.companions {
+    margin: 0;
+    padding: 45px 0;
+    border-bottom: 2px solid #eeeeee;
+}
+.companions .companions-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align
+}
+.companions-list .companions-list-item a {
+    opacity: 0.2;
+}
+.companions-list .companions-list-item a:hover {
+    opacity: 1;
+}
+.companions-list .companions-list-item a:active {
+    opacity: 0.1;
+}
 
+
+/*FOOTER*/
+
+.footer {
+    margin: 0;
+    padding: 0;
+}
+.footer .map-adress {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    margin-top: 80px;
+    width: 100%;
+}
+.footer .map-adress .addres-place {
+    position: absolute;
+    left: 140px;
+    top: 55px;
+    width: 320px;
+    margin: 0;
+    padding: 50px;
+    background-color: #ffffff;
+    text-align: left;
+    font-style: normal;
+    box-sizing: border-box;
+}
+.map-adress .addres-place h4 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.map-adress .addres-place p {
+    color: #666666;
+    line-height: 18px;
+    margin-bottom: 20px;
+}
+.map-adress .addres-place a {
+    margin-top: 35px;
+}
+
+.footer-social {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    padding: 70px 140px;
+    background-color: #ffffff;
+}
+.footer-social .social-list {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0;
+    padding: 0;
+    margin-right: 140px;
+}
+.footer-social .social-list .social-item {
+    margin-right: 10px;
+}
+.footer-social .social-list .social-item:last-child {
+    margin-right: 0;
+}
+.social-list .social-item a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #e1e1e1;
+    text-align: center;
+}
+.social-list .social-item a:hover {
+    background-color: #e74246;
+}
+.social-list .social-item a:active {
+    background-color: #d7373b;
+}
+.social-item a:active svg path {
+    fill: #e37376;
+}
+
+.social-text .about-friendship {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 36px;
+    color: #000000; 
+}
+.social-text .about-discount {
+    margin: 0;
+    padding: 0;
+    line-height: 22px;
+    color: #444444;
+}
