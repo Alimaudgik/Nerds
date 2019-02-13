@@ -4,6 +4,9 @@ body {
 
     font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
+*:focus {
+    outline: none;
+}
 ul {
     margin: 0;
     padding: 0;
@@ -97,8 +100,6 @@ section .slide-text h1 {
 }
 section .slide-text p {
     width: 420px;
-    font-size: 16px;
-    line-height: 24px;
     margin-bottom: 20px;
 }
 section .slide-text a {
@@ -114,7 +115,16 @@ section .slide-text a {
     background-color: #fb565a;
     border-radius: 2px;
 }
-
+section .slide-text a:hover {
+    background-color: #e74246;
+}
+section .slide-text a:active {
+    background-color: #d7373b;
+    color: #e37376;
+    border-top: 3px solid #c13135;
+    box-sizing: padding-box;
+    padding-top: 12px;
+}
 
 .nav-preview .label-slides {
     position: absolute;
@@ -146,9 +156,6 @@ input:checked + section {
     display: block;
 }
 
-
-
-
 .nav-form section .slide-1-img {
     height: 413px;
 }
@@ -158,13 +165,198 @@ input:checked + section {
 .nav-form section .slide-3-img {
     height: 411px;
 }
-/*
-.nav-form input:checked + section {
-    display: flex;
+
+/* MAIN CONTAINER*/
+
+.container {
+    margin: 0;
+    padding: 80px 140px
+}
+
+.container .profile {
     margin: 0;
     padding: 0;
+    padding-bottom: 80px;
     width: 100%;
-    border: 1px dashed green;
-}*/
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    border-bottom: 2px solid #eeeeee;
+}
+
+.container .profile .profile-item {
+    width: 300px;
+}
+.container .profile .profile-item:last-child {
+
+}
+.profile-item .profile-img {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 25px;
+}
+.profile-item h3 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 25px;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.profile-item p {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 35px
+}
+.profile-item .profile-button {
+    margin: 0;
+    padding: 20px 40px;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 2px; 
+}
+.profile-item .button-red {
+    background-color: #fb565a;
+}
+.profile-item .button-green {
+    background-color: #00ca74;
+}
+.profile-item .button-yellow {
+    background-color: #efc849;
+}
+
+.container .about-us {
+    margin: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 40px 0 78px;
+    border-bottom: 2px solid #eeeeee;
+}
+.about-us .who-we-are {
+    width: 660px;
+}
+.who-we-are h2 {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.who-we-are .principles {
+    margin-bottom: 40px;
+}
+.who-we-are .kinds-of-work {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.who-we-are .kinds-list {
+    margin: 0;
+    padding: 0;
+}
+.kinds-list .kinds-list-item p {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+    margin-left: 35px;
+    display: flex;
+}
+.kinds-list .kinds-list-item:last-child p {
+    margin-bottom: 0;
+}
+.kinds-list .kinds-list-item p::before {
+    content: '';
+    position: absolute;
+    left: -35px;
+    align-self: center;
+    width: 25px;
+    height: 2px;
+    background-color: #fb565a;
+}
+.profile-item:nth-child(1) .button-red:hover {
+    background-color: #e74246;
+}
+.profile-item:nth-child(1) .button-red:active {
+    background-color: #d7373b;
+    color: #e37376;
+    border-top: 3px solid #c13135;
+    box-sizing: padding-box;
+    padding-top: 17px;
+}
+.profile-item:nth-child(2) .button-green:hover {
+    background-color: #00bc6c;
+}
+.profile-item:nth-child(2) .button-green:active {
+    background-color: #00aa62;
+    color: #4dc491;
+    border-top: 3px solid #009958;
+    box-sizing: padding-box;
+    padding-top: 17px;
+}
+.profile-item:nth-child(3) .button-yellow:hover {
+    background-color: #eab534;
+}
+.profile-item:nth-child(3) .button-yellow:active {
+    background-color: #e5a722;
+    color: #edc265;
+    border-top: 3px solid #ce961f;
+    box-sizing: padding-box;
+    padding-top: 17px;
+}
+
+.about-us .benefits {
+    width: 360px;
+}
+.about-us .about-us-image {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 40px;
+}
+.about-us-item .text-uppercase {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 45px;
+}
+.about-us-item .benefits-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.benefits-list .benefits-list-item {
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+}
+.benefits-list .benefits-list-item p {
+    margin: 0;
+    padding: 0;
+}
+.benefits-list .benefits-list-item .benefits-percent {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.benefits-percent .percent {
+    font-size: 0.5em;
+    line-height: 1em;
+    vertical-align: top;
+    margin-top: 3px;    
+}
+.benefits-list-item .benefits-text {
+    line-height: 18px;
+} 
+.benefits-list-item .benefits-text::first-letter {
+    text-transform: uppercase;
+} 
 
 
