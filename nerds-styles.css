@@ -516,3 +516,36 @@ input:checked + section {
     font-weight: bold;
 
 }
+.form-write-us .form-block {
+    display: flex;
+    flex: row nowrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+.form-block .half input {
+    width: 360px;
+}
+.form-write-us p {
+    border: 1px dashed red;
+}
+.form-block p input::placeholder,
+.form-write-us p textarea::placeholder {
+    font-size: 16px;
+    line-height: 18px;
+    color: #b1b1b1;
+}
+.form-block p input,
+.fool textarea {
+    margin: 0;
+    padding: 15px;
+    display: block;
+    border: 2px solid #d7dcde;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.fool textarea {
+    width: 100%;
+    resize: none;
+}
