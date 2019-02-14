@@ -493,3 +493,26 @@ input:checked + section {
     line-height: 22px;
     color: #444444;
 }
+
+/*FORM LOG-IN*/
+.form-write-us {
+    margin: 0 auto;
+    padding: 85px 100px;
+    width: 960px;
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75)
+}
+.form-write-us h2 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 50px;
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: bold;
+    background-color: #ffffff;
+}
+.form-write-us .form-wu-item label {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: bold;
+
+}
