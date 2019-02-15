@@ -3,6 +3,8 @@ body {
     padding: 0;
 
     font-family: "Roboto", Arial, Helvetica, sans-serif;
+
+    background-color: #ffffff;
 }
 *:focus {
     outline: none;
@@ -23,18 +25,40 @@ a {
 }
 
 header {
+    margin: 0;
+    padding: 50px 0 0;
     background-color: #eeeeee;
-    padding: 50px 140px 0;
+}
+header .nerds-menu {
+    margin: 0 auto;
+    padding: 0;
+    width: 1160px;
 }
 
 .nerds-menu-list,
 .navigation-list {
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: flex-end;
 }
-.nerds-menu-item a {
+
+.nerds-menu-item .main-logo {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 160px;
+    height: 60px;
+}
+
+.nerds-menu-item .menu-page,
+.nerds-menu-item .menu-page {
+    display: block;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 8px;
     font-size: 16px;
     line-height: 30px;
     text-transform: uppercase;
@@ -47,8 +71,6 @@ header {
 .navigation-list-item:last-child {
     margin-right: 0;
 }
-
-
 .nerds-menu-item .menu-page:hover {
     color: #fb565a;
 }
@@ -64,10 +86,10 @@ header {
 .main-logo img:active {
     opacity: 0.3;
 }
-
 .nav-preview {
-    margin: 0;
-    padding: 10px 0 0;
+    width: 1160px;
+    margin: 0 auto;
+    padding: 0;
 }
 .nav-form {
     position: relative;
@@ -85,14 +107,35 @@ header {
     left: 0;
     top: 0;
     width: 520px;
-    padding: 70px 0 0;
+    margin: 0;
+    padding: 0;
+    padding-top: 80px;
     text-align: left;
 }
 .nav-form section .slide-img {
+    position: relative;
     width: 100%;
+    height: 430px;
     text-align: right;
 }
+.nav-form section .slide-img img {
+    position: absolute;
+    right: 0;
+}
+
+.nav-form section .slide-1-img img {
+    bottom: 0;
+}
+.nav-form section .slide-2-img img {
+    top: 0;
+}
+.nav-form section .slide-3-img img {
+    bottom: 0;
+}
+
 section .slide-text h1 {
+    margin: 0;
+    padding: 0;
     font-size: 55px;
     font-weight: 550px;
     line-height: 55px;
@@ -101,10 +144,11 @@ section .slide-text h1 {
 }
 section .slide-text p {
     width: 420px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 section .slide-text a,
-.map-adress .addres-place a {
+.map-adress .addres-place a,
+.form-write-us .form-button {
     display: block;
     margin: 0;
     padding: 15px 0;
@@ -114,17 +158,20 @@ section .slide-text a,
     text-transform: uppercase;
     color: #ffffff;
     background-color: #fb565a;
+    border: none;
     border-radius: 2px;
 }
 section .slide-text a {
     width: 240px;
 }
 section .slide-text a:hover,
-.map-adress .addres-place a:hover {
+.map-adress .addres-place a:hover,
+.form-write-us .form-button:hover {
     background-color: #e74246;
 }
 section .slide-text a:active,
-.map-adress .addres-place a:active {
+.map-adress .addres-place a:active,
+.form-write-us .form-button:active {
     background-color: #d7373b;
     color: #e37376;
     border-top: 3px solid #c13135;
@@ -137,8 +184,8 @@ section .slide-text a:active,
 
 .nav-preview .label-slides {
     position: absolute;
-    left: 460px;
-    top: 295px;
+    left: 560px;
+    bottom: 90px;
     display: flex;
     width: 90px;
     justify-content: space-between;
@@ -149,7 +196,6 @@ section .slide-text a:active,
     height: 20px;
     border-radius: 50%;
     background-color: #ffffff;
-    z-index: 1;
 }
 .input-hidden {
     position: absolute;
@@ -164,23 +210,12 @@ section .slide-text a:active,
 input:checked + section {
     display: block;
 }
-
-.nav-form section .slide-1-img {
-    height: 413px;
-}
-.nav-form section .slide-2-img {
-    height: 430px;
-}
-.nav-form section .slide-3-img {
-    height: 411px;
-}
-
 /* MAIN CONTAINER*/
 
 .container {
-    margin: 0;
-    padding: 80px 140px;
-    background-color: #ffffff;
+    margin: 0 auto;
+    padding: 80px 0 0;
+    width: 1160px;
 }
 
 .container .profile {
@@ -190,15 +225,16 @@ input:checked + section {
     width: 100%;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     border-bottom: 2px solid #eeeeee;
 }
 
 .container .profile .profile-item {
     width: 300px;
+    margin-right: 100px;
 }
 .container .profile .profile-item:last-child {
-
+    margin-right: 0;
 }
 .profile-item .profile-img {
     margin: 0;
@@ -380,7 +416,6 @@ input:checked + section {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
-    align
 }
 .companions-list .companions-list-item a {
     opacity: 0.2;
@@ -395,15 +430,12 @@ input:checked + section {
 
 /*FOOTER*/
 
-.footer {
-    margin: 0;
-    padding: 0;
-}
+
 .footer .map-adress {
     position: relative;
     margin: 0;
     padding: 0;
-    margin-top: 80px;
+    margin-top: 75px;
     width: 100%;
 }
 .footer .map-adress .addres-place {
@@ -441,8 +473,9 @@ input:checked + section {
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
-    margin: 0;
-    padding: 70px 140px;
+    width: 1160px;
+    margin: 0 auto;
+    padding: 70px 0;
     background-color: #ffffff;
 }
 .footer-social .social-list {
@@ -495,11 +528,23 @@ input:checked + section {
 }
 
 /*FORM LOG-IN*/
-.form-write-us {
-    margin: 0 auto;
-    padding: 85px 100px;
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    background-color: #ffffff;
     width: 960px;
-    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75)
+    margin: 0;
+    margin-left: -480px;
+    margin-top: -310px;
+    padding: 70px 100px 0;
+    box-sizing: border-box;
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
+}
+.form-write-us {
+    margin: 0 auto;  
 }
 .form-write-us h2 {
     margin: 0;
@@ -510,6 +555,12 @@ input:checked + section {
     font-weight: bold;
     background-color: #ffffff;
 }
+
+.form-block p {
+    margin: 0;
+    padding: 0;
+}
+
 .form-write-us .form-wu-item label {
     font-size: 16px;
     line-height: 18px;
@@ -522,19 +573,17 @@ input:checked + section {
     justify-content: space-between;
     margin: 0;
     padding: 0;
+    margin-bottom: 35px;
 }
 .form-block .half input {
     width: 360px;
 }
-.form-write-us p {
-    border: 1px dashed red;
+.form-write-us .fool {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 45px; 
 }
-.form-block p input::placeholder,
-.form-write-us p textarea::placeholder {
-    font-size: 16px;
-    line-height: 18px;
-    color: #b1b1b1;
-}
+
 .form-block p input,
 .fool textarea {
     margin: 0;
@@ -544,8 +593,48 @@ input:checked + section {
     border-radius: 2px;
     box-sizing: border-box;
 }
-
 .fool textarea {
     width: 100%;
     resize: none;
+}
+.form-block p input::placeholder,
+.form-write-us p textarea::placeholder {
+    font-size: 16px;
+    line-height: 18px;
+    color: #b1b1b1;
+}
+.form-write-us .form-button {
+    margin-bottom: 85px;
+    width: 260px;
+}
+.form-write-us .form-close {
+    position: absolute;
+    right: 90px;
+    top: 80px;
+}
+
+.form-close {
+    position: relative;
+    width: 27px;
+    height: 27px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.form-close::before,
+.form-close::after {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 0;
+    width: 5px;
+    height: 27px;
+    background-color: #fecccd;
+    
+}
+.form-close::before {
+    transform: rotate(45deg);
+}
+.form-close::after {
+    transform: rotate(-45deg);
 }
