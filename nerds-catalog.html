@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="normolize.css">
         <link rel="stylesheet" href="nerds-styles.css">
     </head>
-    <body>
+    <body class="catalog">
         <header>
             <nav class="nerds-menu">
                 <ul class="nerds-menu-list">
@@ -27,7 +27,7 @@
                     <li class="nerds-menu-item"><a class="menu-page" href="#">корзина</a></li>
                 </ul>
             </nav>
-            <div classs="catalog-preview">
+            <div class="catalog-preview">
                 <h1>Магазин готовых шаблонов</h1>
             </div>
             
@@ -35,51 +35,74 @@
         <main class="container catalog-content">
 
             <section class="catalog-form">
-                <fieldset>
-                    <legend>Стоимость:</legend>
+                <fieldset class="form-price">
+                    <legend class="price">Стоимость:</legend>
                     <form action="https://echo.htmlacademy.ru" method="POST">
-                        <input type="range" min="0" max="20000" value="15000" step="1000">
-                        <div>
+                        <label class="price-range" for="price-range">
+                        <input id="price-range" type="range" min="0" max="20000" value="15000" step="1000">
+                        </label>
+                        <div class="from-to">
                             <p class="range-from">От <span>0</span></p>
                             <p class="range-to">До <span>15000</span></p>
                         </div>
                     </form>
 
                 </fieldset>
-                <fieldset>
-                    <legend>Сетка:</legend>
+                <fieldset class="form-net">
+                    <legend class="net">Сетка:</legend>
                     <form action="https://echo.htmlacademy.ru" method="POST">
-                        <label class="label-radio" for="adaptiv"><input type="radio" id="adaptiv" class="input-hidden" checked> Атаптивная</label>
-                        <label class="label-radio" for="fixed"><input type="radio" id="fixed" class="input-hidden"> Фиксированая</label>
-                        <label class="label-radio" for="rubber"><input type="radio" id="rubber" class="input-hidden"> Резиновая</label>
+                        <ul class="net-list">
+                            <li class="net-list-item">
+                                <label class="label-radio" for="adaptiv"><input type="radio" id="adaptiv" class="input-hidden" checked> Атаптивная</label>
+                            </li>
+                            <li class="net-list-item">
+                                <label class="label-radio" for="fixed"><input type="radio" id="fixed" class="input-hidden"> Фиксированая</label>
+                            </li>
+                            <li class="net-list-item">
+                                <label class="label-radio" for="rubber"><input type="radio" id="rubber" class="input-hidden"> Резиновая</label>
+                            </li>
+                        </ul>
                     </form>
                 </fieldset>
-                <fieldset>
-                    <legend>Особенности:</legend>
+                <fieldset class="form-features">
+                    <legend class="features">Особенности:</legend>
                     <form action="https://echo.htmlacademy.ru" method="POST">
-                        <label class="label-checkbox" for="slider"><input type="checkbox" id="slider" class="input-hidden" checked> Слайдер</label>
-                        <label class="label-checkbox" for="benefits"><input type="checkbox" id="benefits" class="input-hidden"> Блок преимуществ</label>
-                        <label class="label-checkbox" for="news"><input type="checkbox" id="news" class="input-hidden" checked> Новости</label>
-                        <label class="label-checkbox" for="gallery"><input type="checkbox" id="gallery" class="input-hidden"> Галерея</label>
-                        <label class="label-checkbox" for="basket"><input type="checkbox" id="basket" class="input-hidden"> Корзина</label>
+                        <ul class="features-list">
+                            <li class="features-list-item">
+                                <label class="label-checkbox" for="slider"><input type="checkbox" id="slider" class="input-hidden" checked> Слайдер</label>
+                            </li>
+                            <li class="features-list-item">
+                                <label class="label-checkbox" for="benefits"><input type="checkbox" id="benefits" class="input-hidden"> Блок преимуществ</label>
+                            </li>
+                            <li class="features-list-item">
+                                <label class="label-checkbox" for="news"><input type="checkbox" id="news" class="input-hidden" checked> Новости</label>
+                            </li>
+                            <li class="features-list-item">
+                                <label class="label-checkbox" for="gallery"><input type="checkbox" id="gallery" class="input-hidden"> Галерея</label>
+                            </li>
+                            <li class="features-list-item">
+                                <label class="label-checkbox" for="basket"><input type="checkbox" id="basket" class="input-hidden"> Корзина</label>
+                            </li>
+                        </ul>
                     </form>
                 </fieldset>
-                <button type="submit">Показать</button>
+                <button class="show-button" type="submit">Показать</button>
 
             </section>
             
             <section class="catalog-content">
                 <div class="catalog-filter">
                     <p>Сортировать</p>
-                    <ul>
-                        <li>по цене</li>
-                        <li>по типу</li>
-                        <li>по назанию</li>
+                    <ul class="filter-list">
+                        <li class="filter-list-item"><a href="#">по цене</a></li>
+                        <li class="filter-list-item"><a href="#">по типу</a></li>
+                        <li class="filter-list-item"><a href="#">по назанию</a></li>
                     </ul>
                 </div>
 
+                <div class="catalog-block">
                 <ul class="catalog-list">
-                    <li class="catlog-item">
+                    <li class="catalog-item">
                         <ul class="choice-curcles">
                             <li></li><li></li><li></li>
                         </ul>
@@ -90,7 +113,7 @@
                             <p class="price">9 900 руб.</p>
                         </div>
                     </li>
-                    <li class="catlog-item">
+                    <li class="catalog-item">
                         <ul class="choice-curcles">
                             <li></li><li></li><li></li>
                         </ul>
@@ -101,7 +124,7 @@
                             <p class="price">9 900 руб.</p>
                         </div>
                     </li>
-                    <li class="catlog-item">
+                    <li class="catalog-item">
                         <ul class="choice-curcles">
                             <li></li><li></li><li></li>
                         </ul>
@@ -112,18 +135,18 @@
                             <p class="price">9 900 руб.</p>
                         </div>
                     </li>
-                    <li class="catlog-item">
+                    <li class="catalog-item">
                         <ul class="choice-curcles">
                             <li></li><li></li><li></li>
                         </ul>
-                        <p class="catalog-item-image"><img src="images/img-mishka" alt="image-mishka" width="360" height="576"></p>
+                        <p class="catalog-item-image"><img src="images/img-mishka.png" alt="image-mishka" width="360" height="576"></p>
                         <div class="block-price display-none">
                             <h3 class="item-name">Mishka</h3>
                             <p class="about">Интернет-магазин<br> вязаных игрушек</p>
                             <p class="price">9 900 руб.</p>
                         </div>
                     </li>
-                    <li class="catlog-item">
+                    <li class="catalog-item">
                         <ul class="choice-curcles">
                             <li></li><li></li><li></li>
                         </ul>
@@ -134,7 +157,7 @@
                             <p class="price">9 900 руб.</p>
                         </div>
                     </li>
-                    <li class="catlog-item">
+                    <li class="catalog-item">
                         <ul class="choice-curcles">
                             <li></li><li></li><li></li>
                         </ul>
@@ -147,6 +170,8 @@
                         </div>
                     </li>
                 </ul>
+                </div>
+
                 <ul class="pages-list">
                     <li class="pages-list-item"><a class="page-number page-current" href="">1</a></li>
                     <li class="pages-list-item"><a class="page-number" href="">2</a></li>

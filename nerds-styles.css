@@ -638,3 +638,191 @@ input:checked + section {
 .form-close::after {
     transform: rotate(-45deg);
 }
+
+/*CATALOG-PAGE*/
+.catalog header .catalog-preview {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+.catalog-preview h1 {
+    margin: 0;
+    padding: 80px 0 115px;
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: bold;
+}
+
+.catalog-content {
+    padding: 60px 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.catalog-content div,
+.catalog-content section {
+    border: 1px dashed red;
+}
+.catalog-content .catalog-form-block {
+    margin: 0;
+    padding: 0;
+    width: 260px;
+}
+.catalog-content .catalog-content {
+    margin: 0;
+    padding: 0;
+    width: 760px;
+    flex-flow: column nowrap;
+
+}
+.catalog-content .catalog-block {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+
+}
+.catalog-content .catalog-block .catalog-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.catalog-block .catalog-list .catalog-item {
+    margin: 0;
+    padding: 0;
+}
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+fieldset legend,
+.catalog-filter p {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000000;
+}
+fieldset .price {
+    margin-bottom: 50px;
+}
+.catalog-content .catalog-filter {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 50px;
+    border: 1px dashed blue;
+}
+.catalog-filter .filter-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: flex-end;
+    flex-flow: row nowrap;
+    margin-right: 65px;
+}
+.catalog-filter p,
+.catalog-filter ul {
+    border: 1px dashed green;
+}
+.catalog-list .catalog-item {
+    margin-bottom: 30px;
+}
+.price + form {
+    border: 1px dashed blue;
+}
+.catalog-content div {
+    margin: 0;
+    padding: 0;
+}
+.filter-list-item a {
+    font-size: 16px;
+    line-height: 18px;
+    color: #cacaca;
+
+}
+.filter-list .filter-list-item {
+    margin-right: 25px;
+}
+
+/*FORM*/
+
+.form-price form .price-range {
+    display: block;
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 30px 20px;
+    background-color: #eeeeee;
+}
+.form-price form #price-range {
+    width: 100%;
+}
+.form-price form .from-to {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+}
+.from-to p {
+    width: 110px;
+    line-height: 38px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px dashed blue;
+}
+.from-to p span {
+    display: inline-block;
+    line-height: 38px;
+    width: 80px;
+    text-align: center;
+    background-color: #eeeeee; 
+}
+.form-price {
+    margin-bottom: 60px;
+}
+.form-net,
+.form-features {
+    margin-bottom: 50px;
+}
+.form-net .net,
+.form-features .features {
+    margin-bottom: 20px;
+}
+.form-net form li,
+.form-features form li {
+    margin-left: 35px;
+    margin-bottom: 15px;
+    border: 1px dashed green;
+}
+.form-net form li:last-child,
+.form-features form li:last-child {
+    margin-bottom: 0;
+}
+.form-net form li label,
+.form-features form li label {
+    font-size: 16px;
+    line-height: 26px;
+    color: #283136;
+}
+.show-button {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 19px 0;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 550px;
+    line-height: 18px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 2px;
+}
