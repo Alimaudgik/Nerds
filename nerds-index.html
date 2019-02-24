@@ -24,7 +24,9 @@
                             <li class="navigation-list-item"><a class="menu-page" href="#">контакты</a></li>
                         </ul>
                     </li>
-                    <li class="nerds-menu-item"><a class="menu-page" href="#">корзина</a></li>
+                    <li class="nerds-menu-item">
+                        <a class="menu-page basket-href" href="#"><img src="images/icon-basket.png" width="15" height="15" alt="icon-basket">корзина</a>
+                    </li>
                 </ul>
             </nav>
             <div class="nav-preview">
@@ -144,7 +146,7 @@
                     <h4>NЁRDS DESIGN STUDIO</h4>
                     <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                     <p>тел. +7 (812) 275-75-75</p>
-                    <a href="write-us.html" class="button write-us">напишите нам</a>
+                    <a href="#" class="button write-us">напишите нам</a>
                 </address>
             </section>
             <section class="footer-social">
@@ -186,7 +188,7 @@
             </section>
         </footer>
 
-        <section class="modal display-none">
+        <section class="modal">
             <form class="form-write-us" action="https://echo.htmlacademy.ru" method="POST">
                 <h2 class="">Напишите нам</h2>
                 <div class="form-block">
@@ -210,6 +212,8 @@
                 <button class="form-close modal-close" type="button"></button>
             </form>
         </section>
-        
+
+        <script src="popup.js"></script>
+
     </body>
 </html>
