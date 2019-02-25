@@ -625,6 +625,23 @@ input:checked + section {
     right: 90px;
     top: 80px;
 }
+.form-block p input:focus,
+.form-write-us p textarea:focus {
+    border-color: #000000;
+}
+.form-block p input:focus::placeholder,
+.form-write-us p textarea:focus::placeholder {
+    color: #000000;
+}
+.form-block p input:invalid,
+.form-write-us p textarea:invalid {
+    border-color: #e74246;
+}
+.form-block p input:invalid::placeholder,
+.form-write-us p textarea:invalid::placeholder {
+    color: #e74246;
+}
+
 
 .form-close {
     position: relative;
@@ -642,8 +659,16 @@ input:checked + section {
     top: 0;
     width: 5px;
     height: 27px;
-    background-color: #fecccd;
-    
+    background-color: #fb565a;
+    opacity: 0.3;
+}
+.form-close:hover::before,
+.form-close:hover::after {
+    opacity: 1;
+}
+.form-close:active::before,
+.form-close:active::after {
+    opacity: 0.1;
 }
 .form-close::before {
     transform: rotate(45deg);

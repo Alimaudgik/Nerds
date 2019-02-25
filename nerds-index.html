@@ -194,17 +194,17 @@
                 <div class="form-block">
                 <p class="form-wu-item half">
                     <label for="name">Ваше имя:</label><br>
-                    <input id="name" type="text" placeholder="Имя Фамилия">
+                    <input id="name" type="text" pattern="[A-Za-z]{5,}\s[A-Za-z]{5,}" placeholder="Имя Фамилия">
                 </p>
                 <p class="form-wu-item half">
                     <label for="email">Ваш e-mail:</label><br>
-                    <input id="emale" type="email" placeholder="email@example.com">
+                    <input id="emale" type="email" pattern="[A-Za-z]+@gmail.com" placeholder="email@example.com">
                 </p>
                 </div>
                 
                 <p class="form-wu-item fool">
                     <label for="textarea">Текс письма:</label><br>
-                    <textarea id="textarea" rows="6" rows="6" maxlength="350" placeholder="В свободной форме"></textarea>
+                    <textarea id="textarea" rows="6" rows="6" maxlength="350" pattern="[A-Za-z]" placeholder="В свободной форме"></textarea>
                 </p>
 
                 <button type="submit" class="button form-button">Отправить</button>
